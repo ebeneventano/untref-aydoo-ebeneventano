@@ -15,9 +15,31 @@ public class FuncionLinealTests {
 		float resultado = 11.0f;
 
 		FuncionLineal funcionLineal = new FuncionLineal(a, b);
-
 		Assert.assertEquals(resultado, funcionLineal.evaluarEn(x), 0.0001);
+	}
+	
+	@Test
+	public void evaluarEn0DeberiaRetornar3CuandoAEs2YBEs3() {
 
+		float a = 2.0f;
+		float b = 3.0f;
+		float x = 0.0f;
+		float resultado = 3.0f;
+
+		FuncionLineal funcionLineal = new FuncionLineal(a, b);
+		Assert.assertEquals(resultado, funcionLineal.evaluarEn(x), 0.0001);
+	}
+	
+	@Test
+	public void evaluarEn1DeberiaRetornar5CuandoAEs2YBEs3() {
+
+		float a = 2.0f;
+		float b = 3.0f;
+		float x = 1.0f;
+		float resultado = 5.0f;
+
+		FuncionLineal funcionLineal = new FuncionLineal(a, b);
+		Assert.assertEquals(resultado, funcionLineal.evaluarEn(x), 0.0001);
 	}
 
 }
