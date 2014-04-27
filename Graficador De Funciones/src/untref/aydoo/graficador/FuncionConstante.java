@@ -15,5 +15,4 @@ public class FuncionConstante {
 		return constante;
 
 	}
-
 }

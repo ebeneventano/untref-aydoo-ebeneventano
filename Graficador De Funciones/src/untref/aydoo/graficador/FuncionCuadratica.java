@@ -15,6 +15,4 @@ public class FuncionCuadratica {
 	public float evaluarEn(float x) {
 		return a*(x*x) + b*x + c;
 	}
-	
-
 }

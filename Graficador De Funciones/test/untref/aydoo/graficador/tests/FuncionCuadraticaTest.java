@@ -1,3 +1,5 @@
+import org.junit.Assert;
+import org.junit.Test;
 
 public class FuncionCuadraticaTest {
 	
@@ -17,7 +19,7 @@ public class FuncionCuadraticaTest {
 	public void evualuarEn1DeberiaDar9CuandoAIgual2BIgual3yCIgual4(){
 		float a = 2.0f;
 		float b = 3.0f;
-		float c = 4.0f
+		float c = 4.0f;
 		float x = 1.0f;
 		float resultado = 9.0f;
 
@@ -29,7 +31,7 @@ public class FuncionCuadraticaTest {
 	public void evualuarEnMenos1DeberiaDar3CuandoAIgual2BIgual3yCIgual4(){
 		float a = 2.0f;
 		float b = 3.0f;
-		float c = 4.0f
+		float c = 4.0f;
 		float x = -1.0f;
 		float resultado = 3.0f;
 
