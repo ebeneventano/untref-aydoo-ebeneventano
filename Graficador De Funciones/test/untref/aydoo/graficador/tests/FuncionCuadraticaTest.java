@@ -1,5 +1,9 @@
+package untref.aydoo.graficador.tests;
+
 import org.junit.Assert;
 import org.junit.Test;
+
+import untref.aydoo.graficador.FuncionCuadratica;
 
 public class FuncionCuadraticaTest {
 	
