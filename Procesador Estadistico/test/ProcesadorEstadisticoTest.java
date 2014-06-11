@@ -1,10 +1,13 @@
 package test;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.Set;
 
 import junit.framework.Assert;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import domain.Bicicleta;
@@ -17,6 +20,11 @@ public class ProcesadorEstadisticoTest {
 	
 	private ProcesadorEstadistico procesador = new ProcesadorEstadisticoImpl();
 	
+	@Before
+	public void comenzarAEscucharNuevoCSVFileEnDirectorio(){
+		Path folder = Paths.get(System.getProperty("user.home"));
+		procesador.comenzarAEscuchar(folder);
+	}
 	@Test
 	public void testBicicletaUtilizadaMasVeces(){
 		
