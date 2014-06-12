@@ -3,18 +3,16 @@ package test;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
-import java.util.Set;
 
 import junit.framework.Assert;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import domain.Bicicleta;
-import domain.Recorrido;
-
 import servicio.ProcesadorEstadistico;
 import servicio.ProcesadorEstadisticoImpl;
+import dominio.Bicicleta;
+import dominio.Recorrido;
 
 public class ProcesadorEstadisticoTest {
 	
@@ -43,8 +41,8 @@ public class ProcesadorEstadisticoTest {
 	public void testRecorridoMasRealizado(){
 		List<Recorrido> recorridosMasRealizados = procesador.obtenerRecorridoMasRealizado();
 		
-		String origenId = recorridosMasRealizados.get(0).getEstacionOrigen().getId();
-		String destinoId = recorridosMasRealizados.get(0).getEstacionDestino().getId();
+		String origenId = recorridosMasRealizados.get(0).getTrayectoria().getEstacionOrigen().getId();
+		String destinoId = recorridosMasRealizados.get(0).getTrayectoria().getEstacionDestino().getId();
 
 		Assert.assertEquals(5, origenId);
 		Assert.assertEquals(3, destinoId);
@@ -53,7 +51,5 @@ public class ProcesadorEstadisticoTest {
 	
 	@Test
 	public void testTiempoPromedioDeUso(){
-		Bicicleta bicicleta = new Bicicleta();
-		String tiempoPromedio = procesador.obtenerTiempoPromedio(bicicleta);
 	}
 }

@@ -3,8 +3,8 @@ package servicio;
 import java.nio.file.Path;
 import java.util.List;
 
-import domain.Bicicleta;
-import domain.Recorrido;
+import dominio.Bicicleta;
+import dominio.Recorrido;
 
 public interface ProcesadorEstadistico {
 
